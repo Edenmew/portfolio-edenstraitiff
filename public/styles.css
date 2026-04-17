@@ -1,0 +1,27 @@
+body {
+    background-color: #002400;
+    color: #94ac5d;
+    max-width: 800px;
+    margin: auto;
+    padding: 0;
+}
+#header {
+    background-color: #273b09;
+    color: #ecfeaa;
+    padding-top: 20px;
+
+}
+section {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: #58641d;
+}
+section h2 {
+    text-decoration: underline;
+}
+.project {
+    border-bottom: 2px solid #94ac5d;
+}
+a:hover {
+    color: blue;
+}

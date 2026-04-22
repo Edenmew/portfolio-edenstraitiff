@@ -9,52 +9,90 @@
 <table>
         <thead>
             <tr>
-                <section id="header">
+                <th colspan="2">
+                    <section id="header">
                     <h1>Eden Straitiff</h1>
                     <p>Computer Science Major at Lewis &amp; Clark College</p>
                     <button onclick="showMessage()">clickme</button>
                     <script rel="script" src="script.js"></script>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
-                </section>
+                    </section>
+                </th>
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td rowspan="4">
+                    <table>
+                        <tr>
+                            <td><a href="#about">About</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#projects">Projects</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#contact">Contact</a></td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <section id="about">
+                    <h2>About</h2>
+                    <p>I am currently a sophomore at Lewis &amp; Clark College and have taken a variety of computer science classes. From AI and Machine learning to cybersecurity to Advanced Graphics, I enjoy all types of programming as computers fascinate me. </p>
+                    <p>My interests include</p>
+                    <ul>
+                        <li>Programming</li>
+                        <li>Reading</li>
+                        <li>Puzzle Games</li>
+                    </ul>
+                    </section>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <section id="projects">
+                        <table>
+                            <tr>
+                                <th colspan="3">
+                                    <h2>Projects</h2>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <h3>Graphics in C</h3>
+                                    <p>Using complex matrix math and a library to draw line and points, as well as instruction in class, I was able to make an interactable model of a few shapes that includes a light model.</p>
+                                </td>
+                                <td>
+                                    <h3>Two</h3>
+                                    <p>para asljdf hawe</p>
+                                </td>
+                                <td>
+                                    <h3>This Page</h3>
+                                    <p>This page was created  </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </section>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <section id="contact">
+                    <h2>Contact</h2>
+                    <a href="mailto:lc24-0983@lclark.edu">Email</a>
+                    <a href="https://github.com/Edenmew">Github</a>
+                    </section>
+                </td>
+            </tr>
         </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">
+                    <section id="footer">
+                    <p>Copyright &copy; Eden Straitiff 2026</p>
+                    </section>
+                </td>
+            </tr>
+        </tfoot>
     </table>
-    <section id="about">
-        <h2>About</h2>
-        <p>I am currently a sophomore at Lewis &amp; Clark College and have taken a variety of computer science classes. From AI and Machine learning to cybersecurity to Advanced Graphics, I enjoy all types of programming as computers fascinate me. </p>
-        <p>My interests include</p>
-        <ul>
-            <li>Programming</li>
-            <li>Reading</li>
-            <li>Puzzle Games</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Graphics in C</h3>
-            <p>Using complex matrix math and a library to draw line and points, as well as instruction in class, I was able to make an interactable model of a few shapes that includes a light model.</p>
-        </div>
-        <div class="project">
-            <h3>Two</h3>
-            <p>para asljdf hawe</p>
-        </div>
-        <div class="project">
-            <h3>This Page</h3>
-            <p>This page was created  </p>
-        </div>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <a href="mailto:lc24-0983@lclark.edu">Email</a>
-        <a href="https://github.com/Edenmew">Github</a>
-    </section>
-    <section id="footer">
-        <p>Copyright &copy; Eden Straitiff 2026</p>
-    </section>
 </body>
 </html>

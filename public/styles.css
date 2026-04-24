@@ -25,7 +25,6 @@ table {
 }
 #header {
     position: sticky;
-    display: none;
     top: 0;
     vertical-align: top;
     z-index: 2;

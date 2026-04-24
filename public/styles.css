@@ -1,26 +1,20 @@
 body {
-    background-color: #002400;
-    color: #94ac5d;
-    /*max-width: 800px;*/
+    background-color: #022C04;
+    color: #DCA028;
+    text-align: left;
     margin: auto;
     padding: 0;
 }
-#header {
-    background-color: #273b09;
-    color: #ecfeaa;
-    padding-top: 20px;
-
+thead, tfoot, #navigation, #navigation > table {
+    background-color: #022C04;
 }
-section {
-    padding-top: 30px;
-    padding-bottom: 10px;
-    background-color: #58641d;
+table {
+    background-color: #124012;
+    border-collapse: collapse;
+    border-spacing: 0px;
 }
-section h2 {
-    text-decoration: underline;
-}
-.project {
-    border-bottom: 2px solid #94ac5d;
+th, td {
+    border: none;
 }
 a:hover {
     color: blue;

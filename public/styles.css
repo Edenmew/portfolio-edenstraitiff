@@ -5,19 +5,29 @@ body {
     margin: auto;
     padding: 0;
 }
-thead, tfoot, #navigation, #navigation > table {
+tfoot, #navigation > table {
     background-color: #022C04;
 }
 table {
     background-color: #124012;
-    border-collapse: collapse;
     border-spacing: 0px;
 }
-th, td {
-    border: none;
-}
+
 #navigation {
+    position: sticky;
+    background-color: #022C04;
     vertical-align: top;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#header {
+    /*display: none;*/
+    position: sticky;
+    top: 0;
+    vertical-align: top;
+    z-index: 2;
+    background-color: #022C04;
 }
 .grid {
     display: grid;

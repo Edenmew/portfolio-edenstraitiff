@@ -11,6 +11,8 @@ tfoot, #navigation > table {
 table {
     background-color: #124012;
     border-spacing: 0px;
+    overflow: auto;
+    widthL 100%;
 }
 
 #navigation {
@@ -22,8 +24,8 @@ table {
     z-index: 1;
 }
 #header {
-    /*display: none;*/
     position: sticky;
+    display: none;
     top: 0;
     vertical-align: top;
     z-index: 2;

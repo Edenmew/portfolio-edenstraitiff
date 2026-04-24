@@ -16,6 +16,15 @@ table {
 th, td {
     border: none;
 }
+#navigation {
+    vertical-align: top;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: stretch;
+    gap: 0px 25px;
+}
 a:hover {
     color: blue;
 }

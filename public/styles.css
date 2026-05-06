@@ -1,4 +1,53 @@
-body {
+:root {
+    --header_height: 20vh;
+    --outer_background_color: #022C04;
+    --inner_background_color: #124012;
+    --text_color: #DCA028;
+}
+
+html, body {
+    overscroll-behavior: contain;
+    background-color: var(--outer_background_color);
+    color: var(--text_color);
+    margin: 0;
+    padding: 0;
+}
+
+.flex_wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    position: sticky;
+    top: 0px;
+    height: var(--header_height);
+    background-color: var(--outer_background_color);
+}
+
+.columns {
+    display: flex;
+}
+
+.nav_bar {
+    overscroll-behavior: contain;
+    position: sticky;
+    top: var(--header_height);
+    width: 10vh;
+    height: calc(100vh - var(--header_height));
+    background-color: var(--outer_background_color);
+}
+
+.scrolling_body {
+    flex: 1;
+    background-color: var(--inner_background_color);
+}
+
+
+
+
+
+/*body {
     background-color: #022C04;
     color: #DCA028;
     text-align: left;
@@ -39,3 +88,4 @@ table {
 a:hover {
     color: blue;
 }
+*/

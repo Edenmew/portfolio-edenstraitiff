@@ -6,32 +6,38 @@
 }
 
 html, body {
+    min-height: 100vh;
     background-color: var(--outer_background_color);
     color: var(--text_color);
     scroll-padding-top: var(--header_height);
     margin: 0;
-    padding: 0;
-    overscroll-behavior: contain;
+    overscroll-behavior: none;
 }
 
+.flex_top_bottom {
+    display: flex;
+    flex-direction: column;
+}
 
-.top {
+header {
     position: sticky;
-    top: 0px;
+    top: 0;
     height: var(--header_height);
     background-color: var(--outer_background_color);
+    margin: 0;
+    padding: 0;
 }
 
 .columns {
-    top: var(--header_height);
+    margin: 0;
+    padding: 0;
     display: flex;
-    overscroll-behavior: none;
 }
 
 .nav_bar {
     position: sticky;
-    top: var(--header_height);
-    width: 10vw;
+    width: 7vw;
+    top: calc(var(--header_height));
     height: calc(100vh - var(--header_height));
     background-color: var(--outer_background_color);
 }

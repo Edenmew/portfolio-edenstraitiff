@@ -6,9 +6,9 @@
 }
 
 html, body {
-    overscroll-behavior: contain;
     background-color: var(--outer_background_color);
     color: var(--text_color);
+    scroll-padding-top: var(--header_height);
     margin: 0;
     padding: 0;
 }
@@ -30,7 +30,6 @@ html, body {
 }
 
 .nav_bar {
-    overscroll-behavior: contain;
     position: sticky;
     top: var(--header_height);
     width: 10vh;

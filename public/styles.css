@@ -11,14 +11,9 @@ html, body {
     scroll-padding-top: var(--header_height);
     margin: 0;
     padding: 0;
-    overscroll-behavior: none;
+    overscroll-behavior: contain;
 }
 
-.flex_wrapper {
-    display: flex;
-    flex-direction: column;
-    overscroll-behavior: none;
-}
 
 .top {
     position: sticky;
@@ -30,6 +25,7 @@ html, body {
 .columns {
     top: var(--header_height);
     display: flex;
+    overscroll-behavior: none;
 }
 
 .nav_bar {

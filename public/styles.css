@@ -11,11 +11,13 @@ html, body {
     scroll-padding-top: var(--header_height);
     margin: 0;
     padding: 0;
+    overscroll-behavior: none;
 }
 
 .flex_wrapper {
     display: flex;
     flex-direction: column;
+    overscroll-behavior: none;
 }
 
 .top {
@@ -26,13 +28,14 @@ html, body {
 }
 
 .columns {
+    top: var(--header_height);
     display: flex;
 }
 
 .nav_bar {
     position: sticky;
     top: var(--header_height);
-    width: 10vh;
+    width: 10vw;
     height: calc(100vh - var(--header_height));
     background-color: var(--outer_background_color);
 }

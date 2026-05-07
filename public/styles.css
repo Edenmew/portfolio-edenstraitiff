@@ -48,6 +48,7 @@ nav {
 nav > table {
     border-collapse: collapse;
 }
+
 td {
     width: 7vw;
     height: 3vw;
@@ -65,9 +66,11 @@ tr a button {
     border: none;
     color: var(--text_color);
 }
+
 .scrolling_body {
     flex: 1;
     display: flex;
+    padding: 0 2vw;
     flex-direction: column;
     background-color: var(--inner_background_color);
 }

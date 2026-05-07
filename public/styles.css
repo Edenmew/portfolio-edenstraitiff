@@ -58,13 +58,19 @@ td {
     text-align: center;
 }
 
-tr a button {
+.a_button {
+    width: 7vw;
+    height: 3vw;
     font-size: 1.05rem;
     font-family: "Times New Roman", Times, serif;
     background-color: var(--outer_background_color);
     cursor: pointer;
     border: none;
     color: var(--text_color);
+}
+
+.a_button:hover {
+    background-color: #044E08;
 }
 
 .scrolling_body {

@@ -3,6 +3,7 @@
     --outer_background_color: #022C04;
     --inner_background_color: #124012;
     --text_color: #DCA028;
+    --hover_color: #044E08;
 }
 
 html, body {
@@ -75,7 +76,7 @@ td {
 }
 
 .a_button:hover {
-    background-color: #044E08;
+    background-color: var(--hover_color);
 }
 
 .scrolling_body {
@@ -88,6 +89,10 @@ td {
 .scrolling_body div {
     padding: 0 2vw;
     flex: 1;
+}
+
+.scrolling_body > div + .line {
+    border-top: 1px solid var(--text_color);
 }
 
 .about_lists {

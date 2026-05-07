@@ -12,6 +12,8 @@ html, body {
     scroll-padding-top: var(--header_height);
     margin: 0;
     overscroll-behavior: none;
+    font-family:  "Times New Roman", Times, serif;
+    font-size: 1.1rem;
 }
 
 .flex_top_bottom {
@@ -35,7 +37,7 @@ header {
     display: flex;
 }
 
-.nav_bar {
+nav {
     position: sticky;
     width: 7vw;
     top: calc(var(--header_height));
@@ -43,6 +45,26 @@ header {
     background-color: var(--outer_background_color);
 }
 
+nav > table {
+    border-collapse: collapse;
+}
+td {
+    width: 7vw;
+    height: 3vw;
+    border-width: 2px 0px 2px;
+    border-style: solid;
+    border-color: var(--text_color);
+    text-align: center;
+}
+
+tr a button {
+    font-size: 1.05rem;
+    font-family: "Times New Roman", Times, serif;
+    background-color: var(--outer_background_color);
+    cursor: pointer;
+    border: none;
+    color: var(--text_color);
+}
 .scrolling_body {
     flex: 1;
     display: flex;

@@ -70,7 +70,7 @@ tr a button {
 .scrolling_body {
     flex: 1;
     display: flex;
-    padding: 0 2vw;
+    padding: 0px 2vw;
     flex-direction: column;
     background-color: var(--inner_background_color);
 }

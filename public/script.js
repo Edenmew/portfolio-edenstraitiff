@@ -1,28 +1,29 @@
-/*
-const jsonData = {[
-    {"Project Name": "RGB Light Model in C, Graphics",
+
+const jsonData = {
+    "Projects": [{"Project Name": "RGB Light Model in C, Graphics",
     "Technologies Used": "C, FPToolkit",
     "Description": "sample",
     "Image": "sample",
-    "Link": "sample" },
+    "Link": "sample"},
     {"Project Name": "sample",
     "Technologies Used": "sample",
     "Description": "sample",
     "Image": "sample",
-    "Link": "sample" },
+    "Link": "sample"},
     {"Project Name": "sample",
     "Technologies Used": "sample",
     "Description": "sample",
     "Image": "sample",
-    "Link": "sample" },
+    "Link": "sample"},
     {"Project Name": "sample",
     "Technologies Used": "sample",
     "Description": "sample",
     "Image": "sample",
-    "Link": "sample" }]};
-    */
+    "Link": "sample"}
+]}
 
-//data = JSON.parse(jsonData)
+data = JSON.stringify(jsonData)
+
 
 window.addEventListener("DOMContentLoaded", domLoaded);
 

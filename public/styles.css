@@ -87,7 +87,7 @@ td {
 }
 
 .scrolling_body div {
-    padding: 0 2vw;
+    padding: 5vh 2vw;
     flex: 1;
 }
 
@@ -102,7 +102,17 @@ td {
 }
 
 #cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1vw;
+}
+
+.card {
+    border: 5px solid var(--text_color);
+}
+
+.active {
+    grid-column: span 2;
 }
 
 .contact_link {

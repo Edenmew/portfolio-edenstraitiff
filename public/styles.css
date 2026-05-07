@@ -109,10 +109,18 @@ td {
     border-color: var(--text_color);
 }
 
+.contact_link:hover {
+    background-color: var(--hover_color);
+}
+
 #submit {
     background-color: var(--outer_background_color);
     color: var(--text_color);
     border-color: var(--text_color);
+}
+
+#submit {
+     background-color: var(--hover_color);
 }
 
 #footer {

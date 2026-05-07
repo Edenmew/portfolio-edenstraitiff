@@ -98,5 +98,4 @@ function loadCards()
 
 function toggleRead(button)
 {
-
 }

@@ -128,6 +128,10 @@ td {
     border-color: var(--text_color);
 }
 
+.card_button: hover {
+    background-color: var(--hover_color);
+}
+
 .contact_link {
     height: 3vh;
     width: 5vw;

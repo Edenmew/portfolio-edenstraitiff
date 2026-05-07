@@ -94,8 +94,18 @@
                 </div>
                 <div id="contact" class="line">
                     <h2>Contact</h2>
-                    <a href="mailto:dummyemail@email.com">Email</a>
-                    <a href="https://github.com/Edenmew">Github</a>
+                    <a href="mailto:dummyemail@email.com"><button class="contact_link" type="button">Email</button></a>
+                    <a href="https://github.com/Edenmew"><button class="contact_link" type="button">GitHub</button></a>
+                    <form action="mailto:dummyemail@email.com" method="post" enctype="text/plain">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Message:</label>
+                        <input type="text" id="message" name="message" required>
+
+                        <input type="submit" id="submit" value="Send">
+                    </form>
                 </div>
                 <div id="footer">
                     <p>Copyright &copy; Eden Straitiff 2026</p>

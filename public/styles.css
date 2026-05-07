@@ -101,6 +101,20 @@ td {
     justify-content: space-around;
 }
 
+.contact_link {
+    height: 3vh;
+    width: 5vw;
+    background-color: var(--outer_background_color);
+    color: var(--text_color);
+    border-color: var(--text_color);
+}
+
+#submit {
+    background-color: var(--outer_background_color);
+    color: var(--text_color);
+    border-color: var(--text_color);
+}
+
 #footer {
     background-color: var(--outer_background_color);
 }

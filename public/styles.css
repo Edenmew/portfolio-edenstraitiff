@@ -101,6 +101,10 @@ td {
     justify-content: space-around;
 }
 
+#cards {
+    display: flex;
+}
+
 .contact_link {
     height: 3vh;
     width: 5vw;

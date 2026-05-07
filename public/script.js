@@ -1,28 +1,25 @@
 
 const project_cards =
-    [ {"Project Name": "RGB Light Model in C, Graphics",
+    [ {"name": "RGB Light Model in C",
     "Technologies Used": "C, FPToolkit",
     "Description": "sample",
     "Image": "sample",
     "Link": "sample"},
-    {"Project Name": "sample",
+    {"name": "sample",
     "Technologies Used": "sample",
     "Description": "sample",
     "Image": "sample",
     "Link": "sample"},
-    {"Project Name": "sample",
+    {"name": "sample",
     "Technologies Used": "sample",
     "Description": "sample",
     "Image": "sample",
     "Link": "sample"},
-    {"Project Name": "sample",
+    {"name": "sample",
     "Technologies Used": "sample",
     "Description": "sample",
     "Image": "sample",
     "Link": "sample"} ]
-
-data = JSON.stringify(jsonData)
-
 
 window.addEventListener("DOMContentLoaded", domLoaded);
 
@@ -60,5 +57,12 @@ function changeColors()
 
 function loadCards()
 {
-
+    const cardContainer = document.getElementById("cards");
+    for (const card of project_cards)
+    {
+        console.log("Hello?")
+        let this_card = document.createElement("div");
+        this_card.innerHTML = `<h3>${card.name}</h3>`;
+        cardContainer.appendChild(this_card)
+    }
 }

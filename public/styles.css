@@ -86,7 +86,7 @@ td {
     background-color: var(--inner_background_color);
 }
 
-.scrolling_body div {
+.scrolling_body > div {
     padding: 5vh 2vw;
     flex: 1;
 }
@@ -108,6 +108,7 @@ td {
 }
 
 .card {
+    padding: 1vh;
     border: 5px solid var(--text_color);
 }
 

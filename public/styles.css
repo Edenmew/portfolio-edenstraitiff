@@ -76,11 +76,13 @@ tr a button {
 
 .scrolling_body div {
     padding: 0 2vw;
+    flex: 1;
 }
 
 .about_lists {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 #footer {

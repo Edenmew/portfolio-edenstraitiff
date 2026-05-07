@@ -64,7 +64,6 @@ function loadCards()
     const cardContainer = document.getElementById("cards");
     for (const card of project_cards)
     {
-        console.log("Hello?")
         let this_card = document.createElement("div");
         let card_image = document.createElement("img");
         let card_title = document.createElement("h3");
@@ -92,10 +91,24 @@ function loadCards()
         this_card.appendChild(card_link);
         this_card.appendChild(toggle_read);
         cardContainer.appendChild(this_card);
-        toggle_read.addEventListener("click", function () {toggleRead(button);});
+        toggle_read.addEventListener("click", function () {toggleRead(event);});
     }
 }
 
-function toggleRead(button)
+function toggleRead(event)
 {
+    const toggle_read = event.target;
+    const this_card = toggle_read.parentNode;
+    if (this_card.classList.contains('active'))
+    {
+        this_card.classList.remove('active');
+        this_card.querySelectorAll('p').forEach( child => {child.classList.add("no_display");});
+        toggle_read.textContent = 'Read More';
+    }
+    else
+    {
+        this_card.classList.add('active');
+        this_card.querySelectorAll('p').forEach( child => {child.classList.remove("no_display");});
+        toggle_read.textContent = 'Read Less';
+    }
 }

@@ -116,6 +116,18 @@ td {
     grid-column: span 2;
 }
 
+.no_display {
+    display: none;
+}
+
+.card_button {
+    height: 3vh;
+    width: 10vw;
+    background-color: var(--outer_background_color);
+    color: var(--text_color);
+    border-color: var(--text_color);
+}
+
 .contact_link {
     height: 3vh;
     width: 5vw;
@@ -127,6 +139,7 @@ td {
 .contact_link:hover {
     background-color: var(--hover_color);
 }
+
 
 #submit {
     background-color: var(--outer_background_color);

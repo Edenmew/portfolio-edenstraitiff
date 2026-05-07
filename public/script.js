@@ -71,18 +71,32 @@ function loadCards()
         let card_tech_used = document.createElement("p");
         let card_descript = document.createElement("p");
         let card_link = document.createElement("p");
+        let toggle_read = document.createElement("button");
         this_card.classList.add("card")
         card_image.src = `${card.image}`;
         card_image.style.height = "300px";
         card_title.innerHTML = `${card.name}`;
         card_tech_used.textContent = `${card.tech_used}`;
         card_descript.textContent = `${card.description}`;
+        toggle_read.type = "button";
+        toggle_read.classList.add("card_button");
+        toggle_read.textContent = "Read More";
+        card_tech_used.classList.add("no_display");
+        card_descript.classList.add("no_display");
+        card_link.classList.add("no_display");
         card_link.innerHTML = `<a href="${card.link}"> ${card.link_name}</a>`;
         this_card.appendChild(card_image);
         this_card.appendChild(card_title);
         this_card.appendChild(card_tech_used);
         this_card.appendChild(card_descript);
         this_card.appendChild(card_link);
+        this_card.appendChild(toggle_read);
         cardContainer.appendChild(this_card);
+        toggle_read.addEventListener("click", function () {toggleRead(button);});
     }
+}
+
+function toggleRead(button)
+{
+
 }

@@ -1,5 +1,5 @@
 :root {
-    --header_height: 20vh;
+    --header_height: 22vh;
     --outer_background_color: #022C04;
     --inner_background_color: #124012;
     --text_color: #DCA028;
@@ -29,6 +29,11 @@ header {
     margin: 0;
     padding: 0;
     z-index: 5;
+}
+
+header > img {
+    height: 22vh;
+    float: left;
 }
 
 .columns {

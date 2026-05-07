@@ -70,10 +70,15 @@ tr a button {
 .scrolling_body {
     flex: 1;
     display: flex;
-    padding: 0px 2vw;
     flex-direction: column;
     background-color: var(--inner_background_color);
 }
+
+.scrolling_body div {
+    padding: 0 2vw;
+}
+
+.about_lists {}
 
 #footer {
     background-color: var(--outer_background_color);

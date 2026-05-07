@@ -78,7 +78,10 @@ tr a button {
     padding: 0 2vw;
 }
 
-.about_lists {}
+.about_lists {
+    display: flex;
+    flex-direction: row;
+}
 
 #footer {
     background-color: var(--outer_background_color);
